@@ -1,0 +1,21 @@
+:host{
+    flex: 0 0 50%;
+}
+
+h2{
+    padding: 1rem 0;
+}
+
+.egresos-coun span,h2{
+    color: #CC6976;
+}
+
+.egresos-coun{
+    color: #CC6976;
+    background: #cc69762e;
+    padding: .2rem;
+    border-radius: 4px;
+    font-size: .8em;
+    margin-left: .5rem;
+    transition: margin-right .1s ease;
+}

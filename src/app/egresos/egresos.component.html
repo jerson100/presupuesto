@@ -1,0 +1,17 @@
+<div class="je-item">
+    <section class="egresos-section">
+        <h2>Ingresos</h2>
+        <div class="wrapper-egresos">
+            <ul class="list_egresos">
+                <li *ngFor="let item of egresos; let i = index" class="group group-egresos">
+                    <span>{{item.name}}</span>
+                    <div style="display:flex">
+                        <span class="val">{{item.value}}</span>
+                        <span class="egresos-coun">{{total === 0 ? 0 : item.value / total * 100 | round}}%</span>
+                        <span class="close" (click)="delete(i)">x</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,15 @@
+<div class="form-container">
+    <div class="je-container">
+        <div class="je-item">
+            <form class="form-inner">
+                <select name="option" id="select" #option>
+                    <option value="sumar">+</option>
+                    <option value="restar">-</option>
+                </select>
+                <input type="text" placeholder="Agregar descripción" #description>
+                <input type="number" placeholder="valor" #val>
+                <input type="button" value="ok" (click) = "add(option,description,val)">
+            </form>
+        </div>
+    </div>
+</div>

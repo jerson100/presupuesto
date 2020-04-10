@@ -1,1 +1,93 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 381px;
+}
+
+.je-container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.je-item{
+    padding: 0 1rem;
+    width: 100%;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: solid 1px rgba(0,0,0,.1);
+    background-color: #F7F7F7;
+}
+
+.group:nth-child(n){
+    background-color: #F7F7F7;
+}
+
+.group:nth-child(2n){
+    background-color: #fff;
+}
+.group > span:first-child{
+    color: rgba(0,0,0,.6);
+}
+
+.val{
+    color: #25c8ec;
+}
+
+.close{
+    overflow: hidden;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    color: #fff;
+    background-color: #CC6976;
+    border:solid 1px #CC6976;
+}
+
+.close:hover{
+    cursor: pointer;
+}
+
+ul span:first-child{
+    transition: all .2s ease;
+}
+
+ul > li:hover .close{
+    display: flex;
+}
+
+ul > li:hover span:first-child,ul > li:hover .egresos-coun{
+    margin-right: 25px;
+}
+
+.components-container{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width:100%
+}
+
+@media screen and (min-width: 1200px){
+    .components-container{
+        display: flex;
+    }
+}
+

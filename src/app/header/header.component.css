@@ -1,0 +1,69 @@
+.header-container{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(199,53,181,1) 51%, rgba(255,0,44,1) 100%);
+    padding: 1rem 0;
+}
+
+.header_content h1{
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.header_content p{
+    text-align: center;
+    font-size: 42px;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.header_content .header_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_wrapper .ingresos_container{
+    margin-bottom: 1rem;
+    background-color: #1CAAB7;
+    color: #fff;
+}
+
+.header_wrapper .egresos_container{
+    background-color: #FF6046;
+    color: #fff;
+}
+
+.header_wrapper > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: solid 1px rgba(0,0,0,.2);
+    padding: 1rem;
+    max-width: 450px;
+    width: 100%;
+}
+
+.header_name{
+    color: rgba(0,0,0,.5);
+    text-transform: uppercase;
+}
+
+.egresos_container{
+    position: relative;
+}
+
+.egresos_porcentaje{
+    position: absolute;
+    background-color: rgba(255,255,255,.2);
+    padding: .4rem .3rem;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    font-size: .8em;
+}
+
+.count{
+    margin-right: 4rem;
+}

@@ -1,0 +1,16 @@
+<div class="je-item">
+    <section class="ingresos-section">
+        <h2>Ingresos</h2>
+        <div class="wrapper-ingresos">
+            <ul class="list_ingresos">
+                <li *ngFor="let item of ing" class="group group-ingreso">
+                    <span>{{item.name}}</span>
+                    <div style="display:flex">
+                        <span class="val">{{item.value}}</span>
+                        <span class="close" (click)="delete(0)">x</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</div>

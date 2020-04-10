@@ -1,0 +1,24 @@
+<div class="header-container">
+    <div class="je-container">
+        <div class="je-item">
+            <div class="header_content">
+                <h1>Presupuesto Disponible</h1>
+                <p>{{total}}</p>
+                <div class="header_wrapper">
+                    <div class="ingresos_container">
+                        <span class="header_name">Ingresos</span>
+                        <span class="count">{{totalIngreso}}</span>
+                    </div>
+                    <div class="egresos_container">
+                        <span class="header_name">Egresos</span>
+                        <span class="count">-{{totalEgreso}}</span>
+                        <span class="egresos_porcentaje">
+                            {{totalIngreso === 0 ? 0 : totalEgreso / totalIngreso * 100 | round}}%
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
